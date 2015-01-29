@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DigitalOcean Rails Application</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= content_for?(:title) ? yield(:title) : "Code Made This" %></title>
+  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Doing it right." %>">  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Oswald:400,300" %>
+  <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
+  <header id="main-menu">
+    <%= render 'layouts/navigation' %>
+  </header>
+  
+  <main role="main">
+    <%= render 'layouts/messages' %>
+    <%= yield %>
+  </main>
+  
+  <section id="sidebar-left">
+    <%= yield :sidebar_left %>
+  </section>
 
-<%= yield %>
+  <footer>
+    <%= render 'layouts/footer' %>
+  </main>
 
 </body>
 </html>
