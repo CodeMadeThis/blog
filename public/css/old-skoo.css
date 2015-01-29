@@ -1,0 +1,12 @@
+* {
+	font-family: 'VT323' !important;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon' !important;
+}
+
+.with-love span {
+	margin-right: 0.75em;
+	font-size: 0.75em;
+}

@@ -1,0 +1,27 @@
+#main-view {
+	background: #444;
+}
+
+#sidebar-left article {
+	background: #cdcdcd;
+}
+
+#main {
+	background: #555;
+}
+
+#main h2 {
+	color: #ccc;
+}
+
+#main h3 {
+	color: #bbb;
+}
+
+#main p {
+	color: #aaa;
+}
+
+#author {
+	background: #555;
+}
