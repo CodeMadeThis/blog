@@ -892,9 +892,7 @@ h3, h4 {
 
 .home .main {
     padding: 2em 2em 2em 2em;
-    background: transparent;
     border-bottom: 1px dotted #bbb;
-    border-right: none;
 }
 
 .home .main:last-child {
@@ -904,17 +902,17 @@ h3, h4 {
     border-right: none;
 }
 
-.home .article-list--main {
-    background: #efefef;
-    border-right: 1px solid #999; 
-}
-
 .home .article-list--main .main:first-child {
     padding: 6em 2em 2em 2em;
 }
 
 .home .content {
     margin-bottom: 0;
+}
+
+.home #copyright {
+    max-width: 980px;
+    border-right: 1px solid #999;
 }
 
 @media screen and (min-width: 1720px) {
@@ -989,6 +987,7 @@ h3, h4 {
     padding: 2em;
     position: relative;
     text-align: center;
+    margin-left: 0;
     max-width: 980px;
 }
 
